@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestMain(t *testing.T) {
+func TestBuilder(t *testing.T) {
 	mealbuilder := new(MealBuilder)
 
 	vegmeal := mealbuilder.PrepareVegMeal()

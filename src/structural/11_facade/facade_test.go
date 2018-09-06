@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestFactory(t *testing.T) {
+func TestFacade(t *testing.T) {
 
 	circle := Circle{}
 	rectangle := Rectangle{}

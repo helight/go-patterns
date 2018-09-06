@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestMain(t *testing.T) {
+func TestBridge(t *testing.T) {
 	sms1 := NewCommonMessage(new(MessageSMS))
 	sms1.SendMessage("hello bob, this SMS1", "bob")
 

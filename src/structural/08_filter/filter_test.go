@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestMain(t *testing.T) {
+func TestFilter(t *testing.T) {
 	persons := make(map[int]Person)
 	persons[0] = Person{"Robert0", "Male", "Single"}
 	persons[1] = Person{"Robert1", "Male", "Married"}

@@ -1,10 +1,10 @@
-package factory
+package proxy
 
 import (
 	"testing"
 )
 
-func TestFactory(t *testing.T) {
+func TestProxy(t *testing.T) {
 	proxyShape := ProxyShape{}
 	proxyShape.Draw()
 }

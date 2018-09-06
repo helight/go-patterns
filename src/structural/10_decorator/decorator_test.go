@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestFactory(t *testing.T) {
+func TestDecorator(t *testing.T) {
 
 	circle := Circle{}
 	redcircle := RedShapeDecorator{&circle}

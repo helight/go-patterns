@@ -4,7 +4,7 @@ import (
 	"testing"
 )
 
-func TestMain(t *testing.T) {
+func TestComposite(t *testing.T) {
 
 	ceo := Person{"Robert0", "Male", "Single", make([]Component, 0)}
 	head1 := Person{"Robert1", "Male", "Married", make([]Component, 0)}

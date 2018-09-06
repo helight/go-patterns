@@ -6,7 +6,7 @@ import (
 )
 
 var pm1 *PrototypeManager1
-func TestPm1(t *testing.T){
+func TestPrototype(t *testing.T){
 	c := pm1.Get("t1").Clone()
 
 	t1 := c.(*Circle)

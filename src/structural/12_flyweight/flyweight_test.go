@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestFactory(t *testing.T) {
+func TestFlyweight(t *testing.T) {
 	colors := []string{"red", "green", "blue", "white", "black"}
 
 	shapemaker := ShapeMaker{make(map[string]Circle)}

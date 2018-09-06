@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestMain(t *testing.T) {
+func TestAbstractFactory(t *testing.T) {
 	factory := FactoryProduce{}
 
 	shapeFactory := factory.ProduceFactory("shape")

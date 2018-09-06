@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestMain(t *testing.T) {
+func TestAdapter(t *testing.T) {
 	adaptee := NewAdaptee()
 	target := NewAdapter(adaptee)
 
