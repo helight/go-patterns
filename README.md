@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://helight.info/wp-content/uploads/2018/03/timg-267x300.png" height="300">
+  <img src="https://helight.info/wp-content/uploads/2018/03/timg-267x300.jpg" height="300">
   <h1 align="center">
     Go Patterns
     <br>
@@ -23,13 +23,13 @@ A collection of design & application patterns for Go language.
 
 | Pattern | Description | Status |
 |:-------:|:----------- |:------:|
-| [Adapter](/structural/06_adapter) |  | ✘ |
-| [Bridge](/structural/07_bridge) | Decouples an interface from its implementation so that the two can vary independently | ✘ |
-| [Filter](/structural/08_filter) |  | ✘ |
-| [Composite](/structural/09_composite) | Encapsulates and provides access to a number of different objects | ✘ |
+| [Adapter](/structural/06_adapter) |  | ✔ |
+| [Bridge](/structural/07_bridge) | Decouples an interface from its implementation so that the two can vary independently | ✔ |
+| [Filter](/structural/08_filter) |  | ✔ |
+| [Composite](/structural/09_composite) | Encapsulates and provides access to a number of different objects | ✔ |
 | [Decorator](/structural/10_decorator) | Adds behavior to an object, statically or dynamically | ✔ |
-| [Facade](/structural/11_facade) | Uses one type as an API to a number of others | ✘ |
-| [Flyweight](/structural/12_flyweight) | Reuses existing instances of objects with similar/identical state to minimize resource usage | ✘ |
+| [Facade](/structural/11_facade) | Uses one type as an API to a number of others | ✔ |
+| [Flyweight](/structural/12_flyweight) | Reuses existing instances of objects with similar/identical state to minimize resource usage | ✔ |
 | [Proxy](/structural/13_proxy) | Provides a surrogate for an object to control it's actions | ✔ |
 
 ## Behavioral Patterns
