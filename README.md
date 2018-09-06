@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/gopher.png" height="400">
+  <img src="https://helight.info/wp-content/uploads/2018/03/timg-267x300.png" height="300">
   <h1 align="center">
     Go Patterns
     <br>
