@@ -36,7 +36,7 @@ A collection of design & application patterns for Go language.
 
 | Pattern | Description | Status |
 |:-------:|:----------- |:------:|
-| [Chain of Responsibility](/behavioral/chain_of_responsibility.md) | Avoids coupling a sender to receiver by giving more than object a chance to handle the request | ✘ |
+| [Chain of Responsibility](/behavioral/14_chain) | Avoids coupling a sender to receiver by giving more than object a chance to handle the request | ✔  |
 | [Command](/behavioral/command.md) | Bundles a command and arguments to call later | ✘ |
 | [Mediator](/behavioral/mediator.md) | Connects objects and acts as a proxy | ✘ |
 | [Memento](/behavioral/memento.md) | Generate an opaque token that can be used to go back to a previous state | ✘ |
