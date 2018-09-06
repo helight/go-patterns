@@ -37,15 +37,15 @@ A collection of design & application patterns for Go language.
 | Pattern | Description | Status |
 |:-------:|:----------- |:------:|
 | [Chain of Responsibility](/behavioral/14_chain) | Avoids coupling a sender to receiver by giving more than object a chance to handle the request | ✔  |
-| [Command](/behavioral/command.md) | Bundles a command and arguments to call later | ✘ |
-| [Mediator](/behavioral/mediator.md) | Connects objects and acts as a proxy | ✘ |
-| [Memento](/behavioral/memento.md) | Generate an opaque token that can be used to go back to a previous state | ✘ |
-| [Observer](/behavioral/observer.md) | Provide a callback for notification of events/changes to data | ✘ |
-| [Registry](/behavioral/registry.md) | Keep track of all subclasses of a given class | ✘ |
-| [State](/behavioral/state.md) | Encapsulates varying behavior for the same object based on its internal state | ✘ |
-| [Strategy](/behavioral/strategy.md) | Enables an algorithm's behavior to be selected at runtime | ✘ |
-| [Template](/behavioral/template.md) | Defines a skeleton class which defers some methods to subclasses | ✘ |
-| [Visitor](/behavioral/visitor.md) | Separates an algorithm from an object on which it operates | ✘ |
+| [Command](/behavioral/15_command) | Bundles a command and arguments to call later | ✘ |
+| [Mediator](/behavioral/16_mediator) | Connects objects and acts as a proxy | ✘ |
+| [Memento](/behavioral/17_memento) | Generate an opaque token that can be used to go back to a previous state | ✘ |
+| [Observer](/behavioral/18_observer) | Provide a callback for notification of events/changes to data | ✘ |
+| [Registry](/behavioral/19_registry) | Keep track of all subclasses of a given class | ✘ |
+| [State](/behavioral/20_state) | Encapsulates varying behavior for the same object based on its internal state | ✘ |
+| [Strategy](/behavioral/21_strategy) | Enables an algorithm's behavior to be selected at runtime | ✘ |
+| [Template](/behavioral/22_template) | Defines a skeleton class which defers some methods to subclasses | ✘ |
+| [Visitor](/behavioral/23_visitor) | Separates an algorithm from an object on which it operates | ✘ |
 
 ### refer:
 	http://www.runoob.com/design-pattern/
