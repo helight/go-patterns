@@ -10,7 +10,6 @@ export GOPATH=$GOPATH:`pwd`
 echo $GOPATH
 
 cd -
-behavioral  build.sh  creational  structural
 
 # creational
 # go build 04_builder/builder.go
@@ -32,4 +31,5 @@ go test -v structural/13_proxy/
 
 # behavioral
 go test -v behavioral/14_chain/
+go test -v behavioral/15_command/
 
