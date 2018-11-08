@@ -14,7 +14,7 @@ type MessageSMS struct {
 }
 
 func (s *MessageSMS) Send(text,to string) {
-	fmt.Println("send: %s to %s via SMS \r\n", text, to)
+	fmt.Printf("send: %s to %s via SMS \r\n", text, to)
 }
 
 type MessageEmail struct {

@@ -24,7 +24,7 @@ func (p *Person) Print() {
 	for _, person := range p.persons {
 		person.Print()
 	}
-	fmt.Println("Name: %s ", p.GetName())
+	fmt.Printf("Name: %s", p.GetName())
 }
 
 func (p *Person) GetName() string {
