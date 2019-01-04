@@ -22,4 +22,5 @@ test:
 	go test -v behavioral/14_chain/
 	go test -v behavioral/15_command/
 	go test -v behavioral/16_interpreter/
+	go test -v behavioral/17_mediator/
 

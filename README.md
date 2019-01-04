@@ -39,10 +39,9 @@ A collection of design & application patterns for Go language.
 | [Chain of Responsibility](/behavioral/14_chain) | Avoids coupling a sender to receiver by giving more than object a chance to handle the request | ✔ |
 | [Command](/behavioral/15_command) | Bundles a command and arguments to call later | ✔ |
 | [Interpreter](/behavioral/16_interpreter) | interpreter | ✔ |
-| [Mediator](/behavioral/16_mediator) | Connects objects and acts as a proxy | ✘ |
-| [Memento](/behavioral/17_memento) | Generate an opaque token that can be used to go back to a previous state | ✘ |
-| [Observer](/behavioral/18_observer) | Provide a callback for notification of events/changes to data | ✘ |
-| [Registry](/behavioral/19_registry) | Keep track of all subclasses of a given class | ✘ |
+| [Mediator](/behavioral/17_mediator) | Connects objects and acts as a proxy | ✔ |
+| [Memento](/behavioral/18_memento) | Generate an opaque token that can be used to go back to a previous state | ✘ |
+| [Observer](/behavioral/19_observer) | Provide a callback for notification of events/changes to data | ✘ |
 | [State](/behavioral/20_state) | Encapsulates varying behavior for the same object based on its internal state | ✘ |
 | [Strategy](/behavioral/21_strategy) | Enables an algorithm's behavior to be selected at runtime | ✘ |
 | [Template](/behavioral/22_template) | Defines a skeleton class which defers some methods to subclasses | ✘ |
