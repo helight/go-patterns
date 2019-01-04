@@ -1,18 +1,28 @@
 package interpreter
 
 import (
+	"fmt"
 	"testing"
 )
 
-func TestChain(t *testing.T) {
-	sell := new(Sell)
-	buy := new(Buy)
-	broker := new(Broker)
-	broker.AddCommand("sell", sell)
-	broker.AddCommand("buy", buy)
+func getMaleExpression() Expression {
+	robert := NewTExpression("Robert")
+	john := NewTExpression("John")
+	return NewOrExpression(robert, john)
+}
 
-	broker.DoSell()
-	broker.DoBuy()
+func getMarriedWomanExpression() Expression {
+	julie := NewTExpression("Julie")
+	married := NewTExpression("Married")
+	return NewAndExpression(julie, married)
+}
+
+func TestChain(t *testing.T) {
+	isMale := getMaleExpression()
+	isMarriedWoman := getMarriedWomanExpression()
+
+	fmt.Println("John is mail ? ", isMale.Interpret("John"))
+	fmt.Println("Julie is a married women", isMarriedWoman.Interpret("Married Julie"))
 }
 
 func init() {

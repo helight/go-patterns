@@ -1,44 +1,59 @@
 package interpreter
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 type Expression interface {
 	Interpret(context string) bool
 }
 
-type Sell struct {
-}
-func (s *Sell) Do_command() {
-	fmt.Println("do Sell command")
+type TExpression struct {
+	data string
 }
 
-type Buy struct {
-}
-func (b *Buy) Do_command() {
-	fmt.Println("do buy command")
-}
-
-type Broker struct {
-	Sell Command
-	Buy Command
+func (t *TExpression) Interpret(context string) bool {
+	fmt.Println("do TExpression Interpret")
+	return strings.Contains(t.data, context)
 }
 
-func (b *Broker) AddCommand(ctype string, command Command) {
-	if "sell" == ctype {
-		b.Sell = command
-	} else if "buy" == ctype {
-		b.Buy = command
-	} else {
-		fmt.Println("add wrong command")
+func NewTExpression(context string)  Expression {
+	return &TExpression {
+		data: context,
 	}
 }
 
-func (b *Broker) DoSell() {
-	b.Sell.Do_command()
+type AndExpression struct {
+	express1, express2 Expression
 }
 
-func (b *Broker) DoBuy() {
-	b.Buy.Do_command()
+func (a *AndExpression) Interpret(context string) bool {
+	fmt.Println("do AndExpression Interpret")
+	return a.express1.Interpret(context) && a.express2.Interpret(context)
+}
+
+func NewAndExpression(exp1, exp2 Expression)  Expression {
+	return &AndExpression {
+		express1: exp1,
+		express2: exp2,
+	}
+}
+
+type OrExpression struct {
+	express1, express2 Expression
+}
+
+func (o *OrExpression) Interpret(context string) bool {
+	fmt.Println("do OrExpression Interpret")
+	return o.express1.Interpret(context) || o.express2.Interpret(context)
+}
+
+func NewOrExpression(exp1, exp2 Expression)  Expression {
+	return &OrExpression {
+		express1: exp1,
+		express2: exp2,
+	}
 }
 
 func main() {
