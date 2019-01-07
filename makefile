@@ -25,5 +25,6 @@ test:
 	go test -v behavioral/17_mediator/
 	go test -v behavioral/18_memento/
 	go test -v behavioral/19_observer/
-	
+	go test -v behavioral/20_state
+
 
