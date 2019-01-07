@@ -23,4 +23,5 @@ test:
 	go test -v behavioral/15_command/
 	go test -v behavioral/16_interpreter/
 	go test -v behavioral/17_mediator/
+	go test -v behavioral/18_memento/
 

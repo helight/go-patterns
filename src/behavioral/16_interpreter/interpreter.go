@@ -18,7 +18,7 @@ func (t *TExpression) Interpret(context string) bool {
 	return strings.Contains(t.data, context)
 }
 
-func NewTExpression(context string)  Expression {
+func NewTExpression(context string) Expression {
 	return &TExpression {
 		data: context,
 	}
@@ -33,7 +33,7 @@ func (a *AndExpression) Interpret(context string) bool {
 	return a.express1.Interpret(context) && a.express2.Interpret(context)
 }
 
-func NewAndExpression(exp1, exp2 Expression)  Expression {
+func NewAndExpression(exp1, exp2 Expression) Expression {
 	return &AndExpression {
 		express1: exp1,
 		express2: exp2,
