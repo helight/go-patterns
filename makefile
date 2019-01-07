@@ -26,5 +26,6 @@ test:
 	go test -v behavioral/18_memento/
 	go test -v behavioral/19_observer/
 	go test -v behavioral/20_state
+	go test -v behavioral/21_strategy
 
 
