@@ -45,7 +45,7 @@ A collection of design & application patterns for Go language.
 | [State](/behavioral/20_state) | Encapsulates varying behavior for the same object based on its internal state | ✔ |
 | [Strategy](/behavioral/21_strategy) | Enables an algorithm's behavior to be selected at runtime | ✔ |
 | [Template](/behavioral/22_template) | Defines a skeleton class which defers some methods to subclasses | ✔ |
-| [Visitor](/behavioral/23_visitor) | Separates an algorithm from an object on which it operates | ✘ |
+| [Visitor](/behavioral/23_visitor) | Separates an algorithm from an object on which it operates | ✔ |
 
 ### refer:
 	http://www.runoob.com/design-pattern/

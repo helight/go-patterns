@@ -27,5 +27,7 @@ test:
 	go test -v behavioral/19_observer/
 	go test -v behavioral/20_state
 	go test -v behavioral/21_strategy
+	go test -v behavioral/22_template
+	go test -v behavioral/23_visitor
 
 
