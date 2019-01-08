@@ -43,8 +43,8 @@ A collection of design & application patterns for Go language.
 | [Memento](/behavioral/18_memento) | Generate an opaque token that can be used to go back to a previous state | ✔ |
 | [Observer](/behavioral/19_observer) | Provide a callback for notification of events/changes to data | ✔ |
 | [State](/behavioral/20_state) | Encapsulates varying behavior for the same object based on its internal state | ✔ |
-| [Strategy](/behavioral/21_strategy) | Enables an algorithm's behavior to be selected at runtime | ✘ |
-| [Template](/behavioral/22_template) | Defines a skeleton class which defers some methods to subclasses | ✘ |
+| [Strategy](/behavioral/21_strategy) | Enables an algorithm's behavior to be selected at runtime | ✔ |
+| [Template](/behavioral/22_template) | Defines a skeleton class which defers some methods to subclasses | ✔ |
 | [Visitor](/behavioral/23_visitor) | Separates an algorithm from an object on which it operates | ✘ |
 
 ### refer:
