@@ -1,7 +1,9 @@
 package singleton
 
-import "fmt"
-
+import (
+	"fmt"
+	"sync"
+)
 
 type Singleton struct {
 }
@@ -11,12 +13,15 @@ func (s *Singleton) DoSomething() {
 }
 
 var singleton *Singleton
+var singlock sync.Mutex
 
 //
 func GetSingleton() *Singleton {
+	singlock.Lock()
 	if singleton == nil {
 		singleton = &Singleton{}
 	}
+	singlock.Unlock()
 	return singleton
 
 }
