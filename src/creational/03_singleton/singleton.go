@@ -33,7 +33,7 @@ var (
 	done       sync.Once
 )
 
-// Singleton return Singleton
+// GetSingleton2 return Singleton
 func GetSingleton2() *Singleton {
 	done.Do(func() {
 		singleton2 = &Singleton{}
