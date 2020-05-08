@@ -5,6 +5,7 @@ import (
 	"sync"
 )
 
+// Singleton struct
 type Singleton struct {
 }
 
@@ -18,7 +19,7 @@ func (s *Singleton) DoSomething() {
 	fmt.Println("this is a Singleton")
 }
 
-// Singleton return Singleton
+// GetSingleton return Singleton
 func GetSingleton() *Singleton {
 	singlock.Lock()
 	if singleton == nil {
